@@ -1,0 +1,26 @@
+---
+
+### 4. `package.json`
+Agar aap Frontend ya Node.js use kar rahe hain, toh yeh file zaroori hai.
+```json
+{
+  "name": "safety-iq",
+  "version": "1.0.0",
+  "description": "Safety-IQ project from Replit",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachink957070/Safety-IQ.git"
+  },
+  "author": "Sachin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3"
+  }
+}
