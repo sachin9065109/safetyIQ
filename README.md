@@ -1,6 +1,3 @@
-# safetyIQ
-
-
 # 🛡️ Safety-IQ
 ### AI-Powered Industrial Safety Intelligence Platform
 
@@ -364,7 +361,7 @@ B.Tech Computer Science Engineering
 
 Industrial Safety AI Project
 
-GitHub: https://github.com/yourusername
+
 
 ---
 
