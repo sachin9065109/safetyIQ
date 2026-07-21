@@ -1,0 +1,12 @@
+from fastapi import APIRouter
+from app.schemas.pydantic_schemas import SafetyReport
+
+router = APIRouter()
+
+@router.get("/status")
+async def get_status():
+    return {"project": "Safety-IQ", "system_status": "Active", "alerts": 0}
+
+@router.post("/report")
+async def submit_report(report: SafetyReport):
+    return {"message": "Report submitted successfully", "data": report}

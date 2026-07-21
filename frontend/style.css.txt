@@ -1,0 +1,7 @@
+body { font-family: sans-serif; background: #f4f4f9; margin: 0; color: #333; }
+header { background: #004080; color: #fff; padding: 1rem; text-align: center; }
+main { display: flex; flex-direction: column; align-items: center; padding: 2rem; gap: 1.5rem; }
+.card { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+input, button { width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box; }
+button { background: #004080; color: white; border: none; cursor: pointer; border-radius: 4px; }
+button:hover { background: #003060; }
