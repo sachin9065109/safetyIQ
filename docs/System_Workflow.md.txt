@@ -1,0 +1,25 @@
+---
+
+### 2. `docs/System_Workflow.md`
+Yeh file explain karti hai ki aapka project start se end tak kaise kaam karta hai.
+```markdown
+# ⚙️ System Workflow
+
+The Safety-IQ system follows a decoupled architecture ensuring speed, scalability, and seamless user experience. Here is the complete data flow:
+
+## 1. User Interaction (Frontend)
+* The user opens the Dashboard.
+* The UI instantly makes a `GET` request to fetch the live system status.
+* The user fills out the Safety Report form and clicks Submit.
+
+## 2. Data Transmission
+* The JavaScript Client intercepts the form submission and packages the data into a JSON payload.
+* A `POST` request is sent to the FastAPI backend.
+
+## 3. Backend Processing (FastAPI)
+* **Validation:** FastAPI uses Pydantic to automatically validate the incoming data.
+* **Processing:** The API processes the validated report and triggers background tasks.
+* **Response:** A success message and processed data are returned to the frontend.
+
+## 4. UI Update
+* The frontend receives the response and dynamically updates the interface, clearing the form without a page reload.

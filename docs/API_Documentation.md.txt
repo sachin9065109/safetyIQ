@@ -1,0 +1,40 @@
+# 📡 Safety-IQ API Documentation
+
+This document outlines the RESTful API endpoints provided by the FastAPI backend for the Safety-IQ platform.
+
+## Base URL
+`http://127.0.0.1:8000/api`
+
+---
+
+## 1. Get System Status
+Checks the health and current status of the safety monitoring system.
+
+* **URL:** `/status`
+* **Method:** `GET`
+* **Success Response:**
+  * **Code:** 200 OK
+  * **Content:**
+    ```json
+    {
+      "project": "Safety-IQ",
+      "system_status": "Active",
+      "alerts": 0
+    }
+    ```
+
+---
+
+## 2. Submit Safety Report
+Allows users to submit a new safety incident or standard status report.
+
+* **URL:** `/report`
+* **Method:** `POST`
+* **Headers:** `Content-Type: application/json`
+* **Data Params:**
+  ```json
+  {
+    "location": "string",
+    "status": "string",
+    "risk_level": "integer (1-10)"
+  }
